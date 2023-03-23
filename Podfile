@@ -8,7 +8,10 @@ target 'MovieSearchApp' do
   # Pods for MovieSearchApp
   
   pod ‘Firebase’
+  pod ‘Firebase/Core’
   pod ‘Firebase/Analytics’
+  pod ‘Firebase/Messaging’
   pod ‘Firebase/RemoteConfig’
+  pod ‘SDWebImage’
 
 end

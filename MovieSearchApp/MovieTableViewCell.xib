@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,18 +23,18 @@
                             <constraint firstAttribute="width" constant="100" id="M2j-TR-K82"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVd-j9-NcP">
-                        <rect key="frame" x="130" y="21" width="399" height="50"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVd-j9-NcP">
+                        <rect key="frame" x="140" y="23" width="399" height="50"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="jYp-PX-ZL3"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6b-HA-6TI">
-                        <rect key="frame" x="130" y="81" width="399" height="110"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6b-HA-6TI">
+                        <rect key="frame" x="140" y="81" width="399" height="110"/>
+                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -41,6 +42,7 @@
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="Jkp-4s-KnF" secondAttribute="bottom" constant="10" id="Bbz-C4-IuP"/>
                     <constraint firstAttribute="trailingMargin" secondItem="A6b-HA-6TI" secondAttribute="trailing" constant="10" id="IXz-dx-DFH"/>
+                    <constraint firstItem="Jkp-4s-KnF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Th2-Qm-kzD"/>
                     <constraint firstItem="A6b-HA-6TI" firstAttribute="top" secondItem="KVd-j9-NcP" secondAttribute="bottom" constant="10" id="VV9-hi-MzJ"/>
                     <constraint firstItem="Jkp-4s-KnF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="WKa-Fw-8wh"/>
                     <constraint firstItem="KVd-j9-NcP" firstAttribute="leading" secondItem="Jkp-4s-KnF" secondAttribute="trailing" constant="20" id="anq-AO-Z3g"/>

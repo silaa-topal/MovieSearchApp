@@ -2,11 +2,12 @@
 //  ViewController.swift
 //  MovieSearchApp
 //
-//  Created by Sıla Topal on 15.03.2023.
+//  Created by Sıla Topal on 20.03.2023.
 //
 
 import UIKit
 import SafariServices
+import SDWebImage
 
 class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
 
@@ -48,7 +49,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
                                         return
                                     }
 
-                                    // Convert
                                     var result: MovieResult?
                                     do {
                                         result = try JSONDecoder().decode(MovieResult.self, from: data)
@@ -61,11 +61,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
                                         return
                                     }
 
-                                    // Update our movies array
                                     let newMovies = finalResult.Search
                                     self.movies.append(contentsOf: newMovies)
 
-                                    // Refresh our table
                                     DispatchQueue.main.async {
                                         self.table.reloadData()
                                     }
@@ -74,7 +72,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
 
     }
 
-    // Table
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
@@ -86,16 +83,25 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         return cell
     }
 
+    var selectedMovie: Movie?
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        // Show movie details
-        let url = "https://www.imdb.com/title/\(movies[indexPath.row].imdbID)/"
-        let vc = SFSafariViewController(url: URL(string: url)!)
-        present(vc, animated: true)
+        
+        let movie = movies[indexPath.row]
+        
+        selectedMovie = movie
+        
+        performSegue(withIdentifier: "showDetails", sender: nil)
     }
-
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetails"{
+            let DetailVC = segue.destination as! MovieDetailsViewController
+            DetailVC.movie = selectedMovie
+            
+        }
+        
     }
 
 }
@@ -114,7 +120,6 @@ struct Movie: Codable {
     private enum CodingKeys: String, CodingKey {
         case Title, Year, imdbID, _Type = "Type", Poster
     }
-
 
 }
 

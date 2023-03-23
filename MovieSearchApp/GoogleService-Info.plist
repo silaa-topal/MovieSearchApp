@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>938599441117-dogbhjtc2sqbor73cih20co5gh23s21v.apps.googleusercontent.com</string>
+	<string>938599441117-qe23r3133s96b1h401ofa0nbaj6dkikh.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.938599441117-dogbhjtc2sqbor73cih20co5gh23s21v</string>
+	<string>com.googleusercontent.apps.938599441117-qe23r3133s96b1h401ofa0nbaj6dkikh</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDNrxVEw3IFFuu7_tIKez8IODy_zrnAelU</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.sila.MovieSearchApp</string>
+	<string>com.sila.IOSMovieSearcher</string>
 	<key>PROJECT_ID</key>
 	<string>moviesearchapp-bfeee</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:938599441117:ios:bbdddb2c494a3ab47b7134</string>
+	<string>1:938599441117:ios:194521afe6ba261a7b7134</string>
 </dict>
 </plist>

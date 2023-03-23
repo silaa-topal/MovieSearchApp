@@ -18,7 +18,8 @@
 		7277102B29C9D918002723D2 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7277102929C9D918002723D2 /* MovieTableViewCell.swift */; };
 		7277102C29C9D918002723D2 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7277102A29C9D918002723D2 /* MovieTableViewCell.xib */; };
 		7277103029C9DD57002723D2 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7277102F29C9DD57002723D2 /* SplashViewController.swift */; };
-		7277103229CADE13002723D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7277103129CADE13002723D2 /* GoogleService-Info.plist */; };
+		7277103929CB159F002723D2 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7277103829CB159F002723D2 /* MovieDetailsViewController.swift */; };
+		7277103E29CC59FE002723D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7277103D29CC59FE002723D2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +35,9 @@
 		7277102929C9D918002723D2 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		7277102A29C9D918002723D2 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		7277102F29C9DD57002723D2 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		7277103129CADE13002723D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7277103829CB159F002723D2 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		7277103A29CC368B002723D2 /* MovieSearchApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MovieSearchApp.entitlements; sourceTree = "<group>"; };
+		7277103D29CC59FE002723D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8148069739DFA9342D458B43 /* Pods-MovieSearchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieSearchApp.release.xcconfig"; path = "Target Support Files/Pods-MovieSearchApp/Pods-MovieSearchApp.release.xcconfig"; sourceTree = "<group>"; };
 		BA948852933D665309FD1F06 /* Pods_MovieSearchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieSearchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBCD0F3E440F2DDAE7AB2C0 /* Pods-MovieSearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieSearchApp.debug.xcconfig"; path = "Target Support Files/Pods-MovieSearchApp/Pods-MovieSearchApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,15 +93,17 @@
 		7277101129C9D7C5002723D2 /* MovieSearchApp */ = {
 			isa = PBXGroup;
 			children = (
+				7277103A29CC368B002723D2 /* MovieSearchApp.entitlements */,
 				7277101229C9D7C5002723D2 /* AppDelegate.swift */,
 				7277101429C9D7C5002723D2 /* SceneDelegate.swift */,
 				7277101629C9D7C5002723D2 /* ViewController.swift */,
 				7277102F29C9DD57002723D2 /* SplashViewController.swift */,
+				7277103829CB159F002723D2 /* MovieDetailsViewController.swift */,
 				7277101829C9D7C5002723D2 /* Main.storyboard */,
 				7277101E29C9D7C6002723D2 /* Assets.xcassets */,
 				7277102029C9D7C6002723D2 /* LaunchScreen.storyboard */,
 				7277102329C9D7C6002723D2 /* Info.plist */,
-				7277103129CADE13002723D2 /* GoogleService-Info.plist */,
+				7277103D29CC59FE002723D2 /* GoogleService-Info.plist */,
 				7277101B29C9D7C5002723D2 /* MovieSearchApp.xcdatamodeld */,
 				7277102929C9D918002723D2 /* MovieTableViewCell.swift */,
 				7277102A29C9D918002723D2 /* MovieTableViewCell.xib */,
@@ -172,7 +177,7 @@
 			files = (
 				7277102229C9D7C6002723D2 /* LaunchScreen.storyboard in Resources */,
 				7277101F29C9D7C6002723D2 /* Assets.xcassets in Resources */,
-				7277103229CADE13002723D2 /* GoogleService-Info.plist in Resources */,
+				7277103E29CC59FE002723D2 /* GoogleService-Info.plist in Resources */,
 				7277102C29C9D918002723D2 /* MovieTableViewCell.xib in Resources */,
 				7277101A29C9D7C5002723D2 /* Main.storyboard in Resources */,
 			);
@@ -230,6 +235,7 @@
 				7277102B29C9D918002723D2 /* MovieTableViewCell.swift in Sources */,
 				7277101729C9D7C5002723D2 /* ViewController.swift in Sources */,
 				7277101329C9D7C5002723D2 /* AppDelegate.swift in Sources */,
+				7277103929CB159F002723D2 /* MovieDetailsViewController.swift in Sources */,
 				7277103029C9DD57002723D2 /* SplashViewController.swift in Sources */,
 				7277101D29C9D7C5002723D2 /* MovieSearchApp.xcdatamodeld in Sources */,
 				7277101529C9D7C5002723D2 /* SceneDelegate.swift in Sources */,
@@ -378,9 +384,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MovieSearchApp/MovieSearchApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CYL3Q3TQG6;
+				DEVELOPMENT_TEAM = 7YJ6GESP3R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieSearchApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -393,7 +401,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sila.MovieSearchApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sila.IOSMovieSearcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -407,9 +415,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MovieSearchApp/MovieSearchApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CYL3Q3TQG6;
+				DEVELOPMENT_TEAM = 7YJ6GESP3R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieSearchApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -422,7 +432,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sila.MovieSearchApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sila.IOSMovieSearcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
